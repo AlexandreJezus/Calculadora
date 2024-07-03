@@ -1,26 +1,49 @@
+const opcao = [1, 2, 3, 4, 5];
+if (opcao == 1) {
+  console.log("teste");
+  return;
+}
 function soma(a, b) {
-  if (typeof a !== "number" || typeof b !== "number") somaResultado = a + b;
-  return somaResultado;
+  if (typeof a !== Number || typeof b !== Number) {
+    console.log("Os parâmetros devem ser números.");
+  } else somaResultado = a + b;
+  console.log("O resultado da soma é: " + somaResultado);
+  return;
 }
 
-function subtracao(c, d) {
-  subtracaoResultado = c - d;
-  return subtracaoResultado;
+function subtracao(a, b) {
+  if (typeof a !== Number || typeof b !== Number) {
+    console.log("Os parâmetros devem ser números.");
+  } else subtracaoResultado = a - b;
+  return;
 }
 
-function multiplicacao(e, f) {
-  multiplicacaoResultado = e * f;
-  return multiplicacaoResultado;
+function multiplicacao(a, f) {
+  if (typeof a !== Number || typeof b !== Number) {
+    console.log("Os parâmetros devem ser números.");
+  } else multiplicacaoResultado = a * f;
+  return;
 }
 
-function divisao(g, h) {
-  divisaoResultado = g / h;
-  return divisaoResultado;
+function divisao(a, b) {
+  if (typeof a !== Number || typeof b !== Number) {
+    console.log("Os parâmetros devem ser números.");
+  } else divisaoResultado = a / b;
+  return;
 }
 
-function porcentagem(i, j) {
-  porcentagemResultado = (i / 100) * j;
-  return porcentagemResultado;
+function porcentagem(a, b) {
+  if (typeof a !== Number || typeof b !== Number) {
+    console.log("Os parâmetros devem ser números.");
+  } else porcentagemResultado = (a / 100) * b;
+  return;
 }
 
-module.exports = { soma, subtracao, multiplicacao, divisao, porcentagem };
+module.exports = {
+  opcao,
+  soma,
+  subtracao,
+  multiplicacao,
+  divisao,
+  porcentagem,
+};
