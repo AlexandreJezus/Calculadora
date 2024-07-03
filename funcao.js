@@ -1,6 +1,9 @@
 const opcao = [1, 2, 3, 4, 5];
 function soma(a, b) {
   let somaResultado = a + b;
+  if (somaResultado == NaN) {
+    console.log("Digite um número válido.");
+  }
   console.log("O resultado da soma é: ");
   return somaResultado;
 }

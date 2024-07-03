@@ -62,4 +62,14 @@ if (opcao == 1) {
   } else {
     console.log(respPorcentagem);
   }
+} else {
+  console.log("Opção inválida selecione novamente.");
+  console.log(
+    `Escolha o tipo de operação que deseja realizar: 
+    1. Adição, 
+    2. Subtração, 
+    3. Multiplicação. 
+    4. Divisão, 
+    5. Porcentagem.`
+  );
 }
