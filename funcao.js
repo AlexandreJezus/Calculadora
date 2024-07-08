@@ -1,4 +1,3 @@
-const prompt = require("prompt-sync")();
 function soma(a, b) {
   let somaResultado = a + b;
   console.log("O resultado da soma é: ");
